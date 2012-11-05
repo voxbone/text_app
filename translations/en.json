@@ -1,0 +1,11 @@
+{
+  "app": {
+    "parameters": {
+      "textBody": {
+        "label": "Your text",
+        "helpText": "Placeholders allowed, but no HTML"
+      }
+    },
+   "description": "Any text you want, with data placeholders"
+  }
+}

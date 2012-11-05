@@ -1,0 +1,6 @@
+<div class="sugar_app crm_integration_app">
+  <div>
+    <h3>{{setting "name"}} <span class="loader" style="display: none;"></span> <span class="logo"></span></h3>
+  </div><hr/>
+  <div data-main></div>
+</div>
