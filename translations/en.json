@@ -4,6 +4,10 @@
       "textBody": {
         "label": "Your text",
         "helpText": "Placeholders allowed, but no HTML"
+      },
+      "openLinksInTabs": {
+        "label": "Disable opening links in a new browser tab",
+        "helpText": "Any auto linked URLs will no longer open in a new browser tab"
       }
     },
    "description": "Any text you want, with data placeholders"

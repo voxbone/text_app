@@ -44,9 +44,12 @@
 
     convertLinks: function(string) {
       // Thanks to github:bryanwoods for the pattern
-      var url_pattern = /(^|\s)(\b(https?):\/\/[\-A-Z0-9+&@#\/%?=~_|!:,.;]*[\-A-Z0-9+&@#\/%=~_|]\b)/ig;
+      var urlPattern = /(^|\s)(\b(https?):\/\/[\-A-Z0-9+&@#\/%?=~_|!:,.;]*[\-A-Z0-9+&@#\/%=~_|]\b)/ig,
+          linkTarget = (this.settings.openLinksInTabs) ? '_self' : '_blank';
 
-      return string.replace(url_pattern, "$1<a href='$2'>$2</a>");
+          console.log(this.settings.openLinksInTabs);
+
+      return string.replace(urlPattern, "$1<a href='$2' target='" + linkTarget + "'>$2</a>");
     },
 
     convertPlaceholders: function(string) {
