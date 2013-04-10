@@ -61,7 +61,7 @@
         for (var i=0; i<strMatches.length; i++) {
           var curMatch = strMatches[i];
           var curMatchStripped = curMatch.replace(regexSymbol, '');
-          var curMatchReplaced = curMatch.replace(regexPlaceholder, this.matchPlaceholder(curMatchStripped, string));
+          var curMatchReplaced = curMatch.replace(regexPlaceholder, this.matchPlaceholder(curMatchStripped));
           string = string.replace(curMatch, curMatchReplaced);
         }
       }
@@ -70,7 +70,7 @@
 
     },
 
-    matchPlaceholder: function(placeholderStripped, placeholderString) {
+    matchPlaceholder: function(placeholderStripped) {
 
       switch(placeholderStripped) {
         case 'ticket.id':
@@ -108,7 +108,7 @@
         case 'current_user.email':
           return this.currentUser().email();
         default:
-          return placeholderString;
+          return placeholderStripped;
       }
     }
 
