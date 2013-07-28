@@ -12,7 +12,7 @@ parts:
   - translation:
       key: "txt.apps.text_app.app.parameters.textBody.helpText"
       title: "warning message under the text box"
-      value: "Placeholders allowed, but no HTML"
+      value: "Placeholders allowed, but not HTML."
   - translation:
       key: "txt.apps.text_app.app.parameters.openLinksInTabs.label"
       title: "Settings of the App a checkbox allowing the user to forbid agents clicking an opening links in new tabs"
@@ -20,9 +20,9 @@ parts:
   - translation:
       key: "txt.apps.text_app.app.parameters.openLinksInTabs.helpText"
       title: "help text of that previous checkbox settings"
-      value: "Any auto linked URLs will no longer open in a new browser tab"
+      value: "Any auto linked URLs will no longer open in a new browser tab."
   - translation:
       key: "txt.apps.text_app.app.parameters.description"
       title: "description of the App"
-      value: "Any text you want, with data placeholders"
+      value: "Any text you want, with data placeholders."
 
