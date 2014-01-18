@@ -3,6 +3,7 @@ title: "Text App"
 packages:
   - default
   - app_text_app
+  - classic
 
 parts:
   - translation:
