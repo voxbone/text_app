@@ -9,7 +9,7 @@
         "label": "Desativar abertura de links em nova aba do navegador",
         "helpText": "Qualquer URL vinculada automaticamente não será mais aberta em uma nova aba do navegador."
       },
-      "description": "Qualquer texto é permitido, com placeholders de dados."
+      "description": "O texto que quiser, com placeholders de dados."
     }
   }
 }
