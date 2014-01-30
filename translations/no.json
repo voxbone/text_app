@@ -3,13 +3,13 @@
     "parameters": {
       "textBody": {
         "label": "Din tekst",
-        "helpText": "Pladsholdere er tilladte, men ikke HTML."
+        "helpText": "Plassholdere er tillatt, men ikke HTML."
       },
       "openLinksInTabs": {
-        "label": "Deaktiver åbning af links i en ny browserfane",
-        "helpText": "URL’er, der blev sammenkædet automatisk, kan ikke længere åbnes i en ny browserfane."
+        "label": "Deaktiver åpning av koblinger i en ny nettleserfane",
+        "helpText": "Eventuelle automatisk tilkoblede URL-adresser kan ikke lenger åpnes i en ny nettleserfane."
       },
-      "description": "Vilkårlig tekst, som du vælger, med pladsholdere til data."
+      "description": "Hvilken som helst tekst, med dataplassholdere."
     }
   }
 }
