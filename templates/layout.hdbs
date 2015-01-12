@@ -1,6 +1,9 @@
 <div class="sugar_app crm_integration_app">
   <div>
-    <h3>{{setting "name"}} <span class="loader" style="display: none;"></span> <span class="logo"></span></h3>
+    <header>
+      <span class="logo"></span>
+      <h3>{{setting "name"}}</h3>
+    </header>
   </div><hr/>
   <div data-main></div>
 </div>
