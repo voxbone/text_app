@@ -4,6 +4,6 @@
       <span class="logo"></span>
       <h3>{{setting "name"}}</h3>
     </header>
-  </div><hr/>
+  </div>
   <div data-main></div>
 </div>
