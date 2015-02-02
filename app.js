@@ -71,44 +71,47 @@
     },
 
     matchPlaceholder: function(placeholderStripped) {
-
-      switch(placeholderStripped) {
-        case 'ticket.id':
-          return this.ticket().id();
-        case 'ticket.subject':
-          return this.ticket().subject();
-        case 'ticket.status':
-          return this.ticket().status();
-        case 'ticket.priority':
-          return this.ticket().priority();
-        case 'ticket.type':
-          return this.ticket().type();
-        case 'ticket.requester.id':
-          return this.ticket().requester().id();
-        case 'ticket.requester.name':
-          return this.ticket().requester().name();
-        case 'ticket.requester.email':
-          return this.ticket().requester().email();
-        case 'ticket.assignee.id':
-          var userId = this.ticket().assignee().user();
-          return (userId) ? userId.id() : '';
-        case 'ticket.assignee.name':
-          var userName = this.ticket().assignee().user();
-          return (userName) ? userName.name() : '';
-        case 'ticket.assignee.email':
-          var userEmail = this.ticket().assignee().user();
-          return (userEmail) ? userEmail.email() : '';
-        case 'ticket.tags':
-          var ticketTags = this.ticket().tags();
-          return ticketTags.join(', ');
-        case 'current_user.id':
-          return this.currentUser().id();
-        case 'current_user.name':
-          return this.currentUser().name();
-        case 'current_user.email':
-          return this.currentUser().email();
-        default:
-          return placeholderStripped;
+      try {
+        switch(placeholderStripped) {
+          case 'ticket.id':
+            return this.ticket().id();
+          case 'ticket.subject':
+            return this.ticket().subject();
+          case 'ticket.status':
+            return this.ticket().status();
+          case 'ticket.priority':
+            return this.ticket().priority();
+          case 'ticket.type':
+            return this.ticket().type();
+          case 'ticket.requester.id':
+            return this.ticket().requester().id();
+          case 'ticket.requester.name':
+            return this.ticket().requester().name();
+          case 'ticket.requester.email':
+            return this.ticket().requester().email();
+          case 'ticket.assignee.id':
+            var userId = this.ticket().assignee().user();
+            return (userId) ? userId.id() : '';
+          case 'ticket.assignee.name':
+            var userName = this.ticket().assignee().user();
+            return (userName) ? userName.name() : '';
+          case 'ticket.assignee.email':
+            var userEmail = this.ticket().assignee().user();
+            return (userEmail) ? userEmail.email() : '';
+          case 'ticket.tags':
+            var ticketTags = this.ticket().tags();
+            return ticketTags.join(', ');
+          case 'current_user.id':
+            return this.currentUser().id();
+          case 'current_user.name':
+            return this.currentUser().name();
+          case 'current_user.email':
+            return this.currentUser().email();
+          default:
+            return placeholderStripped;
+        }
+      } catch(e) {
+        console.error(placeholderStripped + ' cannot be interpolated');
       }
     }
 
