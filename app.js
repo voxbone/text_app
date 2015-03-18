@@ -11,6 +11,7 @@
       'ticket.assignee.user.email.changed': 'renderText',
       'ticket.requester.id.changed':        'renderText',
       'ticket.requester.name.changed':      'renderText',
+      'ticket.organization.name.changed':   'renderText',
       'ticket.requester.email.changed':     'renderText',
       'ticket.type.changed':                'renderText',
       'ticket.subject.changed':             'renderText',
@@ -87,6 +88,8 @@
             return this.ticket().requester().id();
           case 'ticket.requester.name':
             return this.ticket().requester().name();
+          case 'ticket.organization.name':
+            return this.ticket().organization().name();
           case 'ticket.requester.email':
             return this.ticket().requester().email();
           case 'ticket.assignee.id':
