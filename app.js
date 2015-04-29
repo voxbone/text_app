@@ -67,7 +67,7 @@
         }
       }
 
-      return string;
+      return string.replace(/ /g,"%2B");
 
     },
 
